@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>VM International Visa sService</title>
+<title>VM International — Visa &amp; Overseas Jobs</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -13,152 +13,160 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--wh);color:var(--tx);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--g)}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--g);border-radius:4px}
 
 /* ── NAV ── */
 nav{background:var(--d);position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(181,137,43,.2)}
-.nw{max-width:1100px;margin:0 auto;padding:0 18px;display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-sq{width:36px;height:36px;background:linear-gradient(135deg,var(--g),var(--g2));border-radius:5px;display:grid;place-items:center;font-family:'Libre Baskerville',serif;font-weight:700;font-size:15px;color:var(--d)}
-.logo-t b{font-family:'Libre Baskerville',serif;font-size:15px;color:#fff;font-weight:700;display:block;line-height:1.1}
-.logo-t small{font-size:9px;letter-spacing:.18em;color:var(--g);text-transform:uppercase}
+.nw{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px}
+
+/* LOGO */
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo-mark{width:38px;height:38px;flex-shrink:0}
+.logo-t b{font-family:'Libre Baskerville',serif;font-size:15.5px;color:#fff;font-weight:700;display:block;line-height:1.15;letter-spacing:.01em}
+.logo-t small{font-size:9px;letter-spacing:.2em;color:var(--g);text-transform:uppercase}
+
 .nl{display:flex;align-items:center;gap:2px}
-.nl a{color:rgba(255,255,255,.7);font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;padding:6px 11px;border-radius:3px;text-decoration:none;transition:.18s}
+.nl a{color:rgba(255,255,255,.7);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;padding:6px 12px;border-radius:3px;text-decoration:none;transition:.18s}
 .nl a:hover{color:var(--g2);background:rgba(181,137,43,.1)}
-.nl .wa{display:flex!important;align-items:center;gap:6px;background:#25d366;color:#fff!important;padding:7px 14px!important;border-radius:4px!important;font-weight:600!important}
-.nl .wa:hover{background:#1fb85a!important}
-.hb{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:8px}
-.hb span{width:20px;height:2px;background:var(--g);display:block;border-radius:2px;transition:.3s}
-@media(max-width:640px){
-  .nl{display:none;flex-direction:column;align-items:stretch;position:absolute;top:60px;left:0;right:0;background:var(--d);padding:8px 12px 12px;border-bottom:1px solid rgba(181,137,43,.15);z-index:200}
+.nl .wa-nav{display:flex!important;align-items:center;gap:7px;background:#25d366;color:#fff!important;padding:7px 15px!important;border-radius:4px!important;font-weight:600!important;letter-spacing:.04em}
+.nl .wa-nav:hover{background:#1fb85a!important}
+.nl .wa-nav svg{flex-shrink:0}
+.hb{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hb span{width:22px;height:2px;background:var(--g);display:block;border-radius:2px;transition:.3s}
+@media(max-width:660px){
+  .nl{display:none;flex-direction:column;align-items:stretch;position:absolute;top:62px;left:0;right:0;background:var(--d);padding:10px 14px 14px;border-bottom:1px solid rgba(181,137,43,.15);z-index:200;gap:2px}
   .nl.o{display:flex}
   .nl a{padding:10px 12px;border-radius:4px}
-  .nl .wa{justify-content:center;margin-top:4px}
+  .nl .wa-nav{justify-content:center;margin-top:6px}
   .hb{display:flex}
 }
 
 /* ── HERO ── */
-.hero{background:var(--d);padding:52px 18px 44px;position:relative;overflow:hidden}
+.hero{background:var(--d);padding:56px 20px 48px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 65% 50%,rgba(181,137,43,.07),transparent 65%)}
 .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(181,137,43,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(181,137,43,.04) 1px,transparent 1px);background-size:44px 44px}
-.hw{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-@media(max-width:820px){.hw{grid-template-columns:1fr}.hero-card{display:none!important}}
-.hero-tag{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(181,137,43,.3);background:rgba(181,137,43,.08);color:var(--g);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:4px 12px;border-radius:2px;margin-bottom:16px}
-.hero-tag i{width:5px;height:5px;background:var(--g);border-radius:50%;animation:blink 2s infinite;flex-shrink:0}
+.hw{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 240px;gap:44px;align-items:center}
+@media(max-width:820px){.hw{grid-template-columns:1fr}.hero-panel{display:none!important}}
+.hero-pill{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(181,137,43,.3);background:rgba(181,137,43,.08);color:var(--g);font-size:10px;letter-spacing:.22em;text-transform:uppercase;padding:4px 13px;border-radius:2px;margin-bottom:18px}
+.hero-pill i{width:5px;height:5px;background:var(--g);border-radius:50%;animation:blink 2s infinite;flex-shrink:0}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.hero h1{font-family:'Libre Baskerville',serif;font-size:clamp(28px,4vw,48px);color:#fff;line-height:1.13;font-weight:700;margin-bottom:12px}
+.hero h1{font-family:'Libre Baskerville',serif;font-size:clamp(28px,4vw,50px);color:#fff;line-height:1.12;font-weight:700;margin-bottom:13px}
 .hero h1 em{color:var(--g2);font-style:italic}
-.hero p{font-size:14px;color:rgba(210,228,244,.72);line-height:1.8;margin-bottom:26px;max-width:450px;font-weight:300}
+.hero-p{font-size:14.5px;color:rgba(210,228,244,.72);line-height:1.8;margin-bottom:28px;max-width:460px;font-weight:300}
 .hero-btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn-g{background:linear-gradient(135deg,var(--g),var(--g2));color:var(--d);padding:11px 22px;border-radius:4px;font-size:12.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;box-shadow:0 3px 14px rgba(181,137,43,.3);transition:.22s}
+.btn-g{background:linear-gradient(135deg,var(--g),var(--g2));color:var(--d);padding:11px 24px;border-radius:4px;font-size:12.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;box-shadow:0 3px 14px rgba(181,137,43,.3);transition:.22s}
 .btn-g:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(181,137,43,.45)}
-.btn-wa{display:flex;align-items:center;gap:7px;background:#25d366;color:#fff;padding:11px 18px;border-radius:4px;font-size:12.5px;font-weight:600;text-decoration:none;transition:.22s}
+.btn-wa{display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;padding:11px 20px;border-radius:4px;font-size:12.5px;font-weight:600;text-decoration:none;transition:.22s}
 .btn-wa:hover{background:#1fb85a;transform:translateY(-1px)}
-.hero-nums{display:flex;gap:28px;border-top:1px solid rgba(181,137,43,.15);margin-top:28px;padding-top:22px}
-.hn strong{font-family:'Libre Baskerville',serif;font-size:24px;color:var(--g2);display:block;line-height:1}
-.hn span{font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:.1em;margin-top:2px;display:block}
-.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(181,137,43,.15);border-radius:8px;padding:22px 20px;min-width:210px;backdrop-filter:blur(6px)}
-.hero-card h4{font-family:'Libre Baskerville',serif;font-size:15px;color:#fff;margin-bottom:14px}
-.cl{list-style:none;display:flex;flex-direction:column;gap:9px}
-.cl li{display:flex;gap:9px;font-size:12.5px;color:rgba(210,228,244,.8);align-items:flex-start;line-height:1.5}
-.cl li::before{content:'✓';color:var(--g);font-weight:700;flex-shrink:0}
+.hero-nums{display:flex;gap:30px;border-top:1px solid rgba(181,137,43,.15);margin-top:30px;padding-top:22px}
+.hn strong{font-family:'Libre Baskerville',serif;font-size:26px;color:var(--g2);display:block;line-height:1}
+.hn span{font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:.1em;margin-top:3px;display:block}
 
-/* ── SECTIONS ── */
-.sec{padding:52px 18px}
+/* hero right panel */
+.hero-panel{background:rgba(255,255,255,.05);border:1px solid rgba(181,137,43,.15);border-radius:9px;padding:22px 20px}
+.hero-panel h4{font-family:'Libre Baskerville',serif;font-size:15px;color:#fff;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(181,137,43,.15)}
+.cl{list-style:none;display:flex;flex-direction:column;gap:10px}
+.cl li{display:flex;gap:10px;font-size:12.5px;color:rgba(210,228,244,.8);align-items:flex-start;line-height:1.5}
+.cl li svg{flex-shrink:0;margin-top:1px;color:var(--g)}
+
+/* ── SHARED SECTION ── */
+.sec{padding:54px 20px}
 .secw{max-width:1100px;margin:0 auto}
-.sh{margin-bottom:32px}
+.sh{margin-bottom:34px}
 .sh-l{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--g);display:block;margin-bottom:8px}
-.sh-t{font-family:'Libre Baskerville',serif;font-size:clamp(20px,3vw,30px);color:var(--tx);font-weight:700;line-height:1.2}
+.sh-t{font-family:'Libre Baskerville',serif;font-size:clamp(20px,3vw,32px);color:var(--tx);font-weight:700;line-height:1.2}
 .sh-t span{color:var(--g)}
-.sh-ln{width:36px;height:2px;background:linear-gradient(90deg,var(--g),var(--g2));border-radius:2px;margin-top:10px}
+.sh-ln{width:38px;height:2px;background:linear-gradient(90deg,var(--g),var(--g2));border-radius:2px;margin-top:11px}
 .sec-bg{background:var(--bg)}
 .sec-dk{background:var(--d)}
 
 /* ── SERVICES ── */
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.sv{background:var(--wh);border:1px solid var(--br);border-radius:7px;padding:20px 16px;transition:.25s;position:relative;overflow:hidden}
-.sv::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--g),var(--g2));transform:scaleY(0);transform-origin:bottom;transition:.25s}
+.sv{background:var(--wh);border:1px solid var(--br);border-radius:8px;padding:22px 18px;transition:.25s;position:relative;overflow:hidden}
+.sv::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--g),var(--g2));transform:scaleY(0);transform-origin:bottom;transition:.3s}
 .sv:hover{box-shadow:0 6px 24px rgba(11,28,46,.09);transform:translateY(-3px)}.sv:hover::before{transform:scaleY(1)}
-.sv-i{font-size:22px;margin-bottom:10px}
-.sv h3{font-size:13.5px;font-weight:600;margin-bottom:5px}
+.sv-ic{width:40px;height:40px;border-radius:8px;background:rgba(181,137,43,.09);display:grid;place-items:center;margin-bottom:14px;border:1px solid rgba(181,137,43,.15)}
+.sv-ic svg{color:var(--g)}
+.sv h3{font-size:13.5px;font-weight:600;margin-bottom:5px;color:var(--tx)}
 .sv p{font-size:12px;color:var(--mt);line-height:1.7}
 
 /* ── JOB FILTERS ── */
 .jf{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
-.fb{padding:6px 13px;border:1px solid var(--br);border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;background:var(--wh);color:var(--tx);transition:.18s;font-family:'Inter',sans-serif;white-space:nowrap}
+.fb{display:flex;align-items:center;gap:6px;padding:6px 13px;border:1px solid var(--br);border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;background:var(--wh);color:var(--tx);transition:.18s;font-family:'Inter',sans-serif;white-space:nowrap}
+.fb svg{opacity:.55;transition:.18s}
 .fb.a,.fb:hover{background:var(--d);color:var(--g);border-color:var(--d)}
+.fb.a svg,.fb:hover svg{opacity:1}
 .job-list{display:flex;flex-direction:column;gap:9px}
 
-/* ── JOB ACCORDION CARD ── */
+/* ── JOB ACCORDION ── */
 .job-item{background:var(--wh);border:1px solid var(--br);border-radius:8px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
-.job-item.open{border-color:rgba(181,137,43,.4);box-shadow:0 4px 20px rgba(11,28,46,.09)}
+.job-item.open{border-color:rgba(181,137,43,.4);box-shadow:0 4px 22px rgba(11,28,46,.09)}
+.job-head{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;transition:background .15s}
+.job-head:hover{background:rgba(11,28,46,.025)}
 
-/* collapsed header */
-.job-head{display:flex;align-items:center;gap:11px;padding:13px 14px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
-.job-head:hover,.job-head:active{background:rgba(11,28,46,.025)}
-.job-ic{width:38px;height:38px;border-radius:6px;background:var(--bg);display:grid;place-items:center;font-size:18px;flex-shrink:0;border:1px solid var(--br)}
+/* country flag icon box */
+.job-flag-box{width:40px;height:40px;border-radius:8px;background:var(--bg);border:1px solid var(--br);display:grid;place-items:center;flex-shrink:0;overflow:hidden}
+.job-flag-box img{width:26px;height:20px;object-fit:cover;border-radius:2px}
+
 .job-hl{flex:1;min-width:0;overflow:hidden}
 .job-title{font-size:13.5px;font-weight:600;color:var(--tx);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:3px}
-.job-meta{font-size:11px;color:var(--mt);display:flex;flex-wrap:wrap;align-items:center;gap:4px;line-height:1.4}
+.job-meta{font-size:11px;color:var(--mt);display:flex;flex-wrap:wrap;align-items:center;gap:5px;line-height:1.4}
 .job-co{font-weight:500;color:var(--tx)}
-.dot{opacity:.4}
-/* salary + badge: on right for desktop, under title for mobile */
-.job-right{display:flex;align-items:center;gap:8px;flex-shrink:0;margin-left:4px}
+.dot{opacity:.35}
+.job-right{display:flex;align-items:center;gap:8px;flex-shrink:0;margin-left:6px}
 .job-sal{font-size:11.5px;font-weight:700;color:#16a34a;white-space:nowrap}
 .jbadge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;white-space:nowrap}
 .hot{background:#fef2f2;color:#dc2626;border:1px solid #fecaca}
 .new{background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0}
-.feat{background:#fefce8;color:#ca8a04;border:1px solid #fde68a}
-.job-arr{width:22px;height:22px;border-radius:50%;background:var(--bg);display:grid;place-items:center;color:var(--mt);font-size:12px;transition:.3s;flex-shrink:0}
-.job-item.open .job-arr{transform:rotate(180deg);background:var(--gc);color:var(--g)}
-
-/* mobile: hide salary+badge from right, show them below title */
+.feat{background:#fefce8;color:#b45309;border:1px solid #fde68a}
+.job-arr{width:22px;height:22px;border-radius:50%;background:var(--bg);display:grid;place-items:center;transition:.3s;flex-shrink:0}
+.job-arr svg{color:var(--mt);transition:.3s}
+.job-item.open .job-arr{background:var(--gc)}
+.job-item.open .job-arr svg{color:var(--g);transform:rotate(180deg)}
+/* mobile: move salary+badge under title */
 .job-mob{display:none;align-items:center;gap:6px;margin-top:5px;flex-wrap:wrap}
 @media(max-width:520px){
   .job-right .job-sal,.job-right .jbadge{display:none}
   .job-mob{display:flex}
   .job-title{white-space:normal;line-height:1.3;font-size:13px}
-  .job-head{padding:11px 12px;gap:9px}
-  .job-ic{width:34px;height:34px;font-size:16px}
-  .jf{gap:6px}
-  .fb{font-size:11.5px;padding:5px 11px}
+  .job-head{padding:12px 13px;gap:10px}
+  .job-flag-box{width:36px;height:36px}
+  .jf .fb{font-size:11.5px;padding:5px 10px}
 }
 
-/* ── JOB BODY (expanded) ── */
+/* ── JOB EXPANDED BODY ── */
 .job-body{max-height:0;overflow:hidden;transition:max-height .38s cubic-bezier(.4,0,.2,1)}
-.job-body-in{padding:16px 14px 18px;border-top:1px solid var(--br)}
+.job-body-in{padding:16px 16px 18px;border-top:1px solid var(--br)}
 .jb-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:16px}
 @media(max-width:500px){.jb-grid{grid-template-columns:1fr}}
-.jb-sec h5{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--g);margin-bottom:9px;font-weight:600}
-.jb-rows{display:flex;flex-direction:column;gap:6px}
-.jb-row{display:flex;gap:6px;font-size:12px;line-height:1.5}
-.jb-row b{color:var(--tx);font-weight:500;width:88px;flex-shrink:0}
+.jb-sec h5{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--g);margin-bottom:10px;font-weight:600}
+.jb-rows{display:flex;flex-direction:column;gap:7px}
+.jb-row{display:flex;gap:8px;font-size:12px;line-height:1.5}
+.jb-row b{color:var(--tx);font-weight:500;width:86px;flex-shrink:0}
 .jb-row span{color:var(--mt)}
-.req-list{list-style:none;display:flex;flex-direction:column;gap:5px}
-.req-list li{font-size:12px;color:var(--mt);display:flex;gap:6px;line-height:1.5}
-.req-list li::before{content:'•';color:var(--g);flex-shrink:0}
+.perk-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.perk-list li{font-size:12px;color:var(--mt);display:flex;gap:7px;line-height:1.5;align-items:flex-start}
+.perk-list li svg{flex-shrink:0;color:var(--g);margin-top:2px}
 .jb-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
-.jb-tag{font-size:11px;background:var(--bg);color:var(--mt);padding:3px 8px;border-radius:10px;border:1px solid var(--br)}
-.jb-acts{display:flex;gap:9px;flex-wrap:wrap}
-.apply-btn{display:flex;align-items:center;gap:6px;background:var(--d);color:#fff;padding:9px 18px;border-radius:5px;font-size:12px;font-weight:600;text-decoration:none;transition:.2s;white-space:nowrap}
-.apply-btn:hover{background:var(--d2)}
-.wa-apply{display:flex;align-items:center;gap:6px;background:#25d366;color:#fff;padding:9px 16px;border-radius:5px;font-size:12px;font-weight:600;text-decoration:none;transition:.2s;white-space:nowrap}
-.wa-apply:hover{background:#1fb85a}
-@media(max-width:400px){.jb-acts{flex-direction:column}.apply-btn,.wa-apply{justify-content:center}}
+.jb-tag{font-size:11px;background:var(--bg);color:var(--mt);padding:3px 9px;border-radius:10px;border:1px solid var(--br)}
+/* single WhatsApp apply button */
+.jb-apply{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:11px 20px;background:#25d366;color:#fff;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:.2s;margin-top:2px}
+.jb-apply:hover{background:#1fb85a;transform:translateY(-1px)}
+.jb-apply svg{flex-shrink:0}
 
 /* jobs more banner */
-.jobs-more{margin-top:20px;padding:18px 20px;background:var(--d);border-radius:8px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.jobs-more p{color:rgba(210,228,244,.8);font-size:13px}
+.jobs-more{margin-top:18px;padding:18px 20px;background:var(--d);border-radius:8px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.jobs-more p{color:rgba(210,228,244,.8);font-size:13px;line-height:1.5}
 .jobs-more strong{color:var(--g2)}
-.jobs-more a{display:flex;align-items:center;gap:7px;background:#25d366;color:#fff;padding:9px 16px;border-radius:5px;font-size:12.5px;font-weight:600;text-decoration:none;white-space:nowrap;flex-shrink:0}
-.jobs-more a:hover{background:#1fb85a}
-@media(max-width:480px){.jobs-more{flex-direction:column;text-align:center}.jobs-more a{width:100%;justify-content:center}}
+.jm-btn{display:flex;align-items:center;gap:7px;background:#25d366;color:#fff;padding:9px 18px;border-radius:5px;font-size:12.5px;font-weight:600;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:.2s}
+.jm-btn:hover{background:#1fb85a}
+@media(max-width:480px){.jobs-more{flex-direction:column;text-align:center}.jm-btn{width:100%;justify-content:center}}
 
 /* ── COUNTRIES ── */
-.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
-.cc{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border:1px solid rgba(181,137,43,.12);border-radius:6px;padding:12px 13px;text-decoration:none;transition:.22s}
-.cc:hover{background:rgba(181,137,43,.09);border-color:rgba(181,137,43,.35);transform:translateY(-2px)}
-.cc-fl{font-size:22px;flex-shrink:0;line-height:1}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:10px}
+.cc{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.04);border:1px solid rgba(181,137,43,.12);border-radius:7px;padding:12px 14px;text-decoration:none;transition:.22s}
+.cc:hover{background:rgba(181,137,43,.09);border-color:rgba(181,137,43,.38);transform:translateY(-2px)}
+.cc-flag{width:32px;height:24px;border-radius:3px;object-fit:cover;flex-shrink:0;border:1px solid rgba(255,255,255,.08)}
 .cc-n{font-size:13px;font-weight:500;color:#fff;line-height:1.2}
 .cc-t{font-size:10px;color:var(--g);margin-top:2px}
 .sec-dk .sh-t{color:#fff}
@@ -168,60 +176,80 @@ nav{background:var(--d);position:sticky;top:0;z-index:200;border-bottom:1px soli
 @media(max-width:680px){.pg{grid-template-columns:1fr 1fr}}
 @media(max-width:360px){.pg{grid-template-columns:1fr}}
 .ps{text-align:center;padding:0 8px}
-.ps-n{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--g),var(--g2));color:var(--d);font-family:'Libre Baskerville',serif;font-size:20px;font-weight:700;display:grid;place-items:center;margin:0 auto 13px;box-shadow:0 3px 12px rgba(181,137,43,.3)}
-.ps h4{font-size:13px;font-weight:600;margin-bottom:5px}
+.ps-n{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--g),var(--g2));color:var(--d);font-family:'Libre Baskerville',serif;font-size:20px;font-weight:700;display:grid;place-items:center;margin:0 auto 14px;box-shadow:0 3px 12px rgba(181,137,43,.3)}
+.ps h4{font-size:13px;font-weight:600;margin-bottom:5px;color:var(--tx)}
 .ps p{font-size:12px;color:var(--mt);line-height:1.65}
 
-/* ── CONTACT (WhatsApp only — no form) ── */
-.contact-wa{max-width:540px;margin:0 auto;text-align:center}
-.contact-wa p{font-size:14px;color:var(--mt);line-height:1.75;margin-bottom:22px}
+/* ── CONTACT ── */
+.contact-wa{max-width:500px;margin:0 auto;text-align:center}
+.contact-wa p{font-size:14px;color:var(--mt);line-height:1.8;margin-bottom:22px}
 .wa-big{display:flex;align-items:center;justify-content:center;gap:10px;background:#25d366;color:#fff;padding:15px 28px;border-radius:7px;font-size:16px;font-weight:700;text-decoration:none;transition:.22s;box-shadow:0 4px 16px rgba(37,211,102,.3)}
 .wa-big:hover{background:#1fb85a;transform:translateY(-2px)}
-.wa-info{display:flex;justify-content:center;gap:20px;margin-top:18px;flex-wrap:wrap}
+.wa-info{display:flex;justify-content:center;gap:22px;margin-top:18px;flex-wrap:wrap}
 .wi{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--mt)}
+.wi svg{color:var(--g);flex-shrink:0}
 .wi strong{color:var(--tx)}
 
 /* ── FOOTER ── */
-footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,137,43,.12)}
+footer{background:#060e18;padding:32px 20px 20px;border-top:1px solid rgba(181,137,43,.12)}
 .fw{max-width:1100px;margin:0 auto}
-.ft{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;padding-bottom:20px}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;padding-bottom:22px}
 @media(max-width:580px){.ft{grid-template-columns:1fr 1fr}}
-@media(max-width:360px){.ft{grid-template-columns:1fr}}
+@media(max-width:340px){.ft{grid-template-columns:1fr}}
 .fb2 p{font-size:12px;color:var(--mt);line-height:1.75;margin-top:10px;margin-bottom:12px}
 .fc h5{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--g);margin-bottom:11px}
 .fc ul{list-style:none;display:flex;flex-direction:column;gap:7px}
 .fc ul li a{font-size:12.5px;color:var(--mt);text-decoration:none;transition:.18s}
 .fc ul li a:hover{color:rgba(220,232,245,.85)}
-.fbot{border-top:1px solid rgba(255,255,255,.05);padding-top:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
-.fbot p,.fbot a{font-size:11.5px;color:var(--mt)}.fbot a{color:var(--g);text-decoration:none}
+.fbot{border-top:1px solid rgba(255,255,255,.05);padding-top:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:center}
+.fbot p{font-size:11.5px;color:var(--mt)}
+.fbot a{font-size:11.5px;color:var(--g);text-decoration:none;display:flex;align-items:center;gap:5px}
 
 /* ── WA FLOAT ── */
-.waf{position:fixed;bottom:20px;right:20px;z-index:1000;width:50px;height:50px;border-radius:50%;background:#25d366;display:grid;place-items:center;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.5);animation:bob 3s ease-in-out infinite}
+.waf{position:fixed;bottom:22px;right:22px;z-index:1000;width:52px;height:52px;border-radius:50%;background:#25d366;display:grid;place-items:center;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.5);animation:bob 3s ease-in-out infinite}
 .waf:hover{animation:none;transform:scale(1.1)}
-.waf svg{width:25px;height:25px;fill:#fff}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 
-/* ── FADE ── */
+/* ── FADE IN ── */
 .fi{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .fi.v{opacity:1;transform:none}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
 <nav>
   <div class="nw">
     <a href="#" class="logo">
-      <div class="logo-sq">VM</div>
-      <div class="logo-t"><b>International</b><small>Visa Service</small></div>
+      <!-- Professional globe+shield logo mark -->
+      <svg class="logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="38" height="38" rx="7" fill="url(#lg)"/>
+        <!-- Globe lines -->
+        <circle cx="19" cy="19" r="10" stroke="#0b1c2e" stroke-width="1.4" fill="none"/>
+        <ellipse cx="19" cy="19" rx="5.5" ry="10" stroke="#0b1c2e" stroke-width="1.2" fill="none"/>
+        <line x1="9" y1="19" x2="29" y2="19" stroke="#0b1c2e" stroke-width="1.2"/>
+        <line x1="10.5" y1="14" x2="27.5" y2="14" stroke="#0b1c2e" stroke-width="1"/>
+        <line x1="10.5" y1="24" x2="27.5" y2="24" stroke="#0b1c2e" stroke-width="1"/>
+        <!-- Plane -->
+        <path d="M23 13l-7 4 2 2-4 3 1.5 1 4-2 1.5 2 4-7z" fill="#0b1c2e" opacity=".8"/>
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#b5892b"/><stop offset="1" stop-color="#d4a83e"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="logo-t">
+        <b>VM International</b>
+        <small>Visa &amp; Overseas Jobs</small>
+      </div>
     </a>
     <div class="nl" id="nl">
       <a href="#services">Services</a>
       <a href="#jobs">Jobs</a>
       <a href="#countries">Countries</a>
       <a href="#contact">Contact</a>
-      <a href="https://wa.me/13653601075" target="_blank" class="wa">
-        <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <a href="https://wa.me/13653601075" target="_blank" class="wa-nav">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         WhatsApp
       </a>
     </div>
@@ -229,17 +257,17 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
 <div class="hero">
   <div class="hw">
     <div>
-      <div class="hero-tag"><i></i> Trusted Globally</div>
+      <div class="hero-pill"><i></i> Trusted Globally</div>
       <h1>Expert Visa &amp; <em>Overseas</em><br>Career Services</h1>
-      <p>VM International handles your visa and connects you with verified employers across 50+ countries. Fast, transparent, reliable.</p>
+      <p class="hero-p">VM International handles your visa and connects you with verified employers across 50+ countries. Fast, transparent, reliable.</p>
       <div class="hero-btns">
         <a href="#jobs" class="btn-g">Browse Jobs</a>
         <a href="https://wa.me/13653601075" target="_blank" class="btn-wa">
-          <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Chat Now
         </a>
       </div>
@@ -249,21 +277,21 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
         <div class="hn"><strong>24/7</strong><span>Support</span></div>
       </div>
     </div>
-    <div class="hero-card">
+    <div class="hero-panel">
       <h4>We Handle Everything</h4>
       <ul class="cl">
-        <li>Visa documentation &amp; filing</li>
-        <li>Work permit &amp; PR applications</li>
-        <li>International job matching</li>
-        <li>Student visa &amp; admissions</li>
-        <li>Family reunification visas</li>
-        <li>Zero hidden charges</li>
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Visa documentation &amp; embassy filing</li>
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Work permit &amp; PR applications</li>
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>International job matching</li>
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Student visa &amp; admissions</li>
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Family reunification visas</li>
+        <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Zero hidden charges</li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- SERVICES -->
+<!-- ══════════════════════════ SERVICES ══════════════════════════════ -->
 <section class="sec sec-bg" id="services">
   <div class="secw">
     <div class="sh fi">
@@ -272,17 +300,35 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
       <div class="sh-ln"></div>
     </div>
     <div class="sg">
-      <div class="sv fi"><div class="sv-i">🛂</div><h3>Tourist Visa</h3><p>Leisure travel visas for all major destinations. Full documentation support.</p></div>
-      <div class="sv fi"><div class="sv-i">💼</div><h3>Business Visa</h3><p>Corporate travel visas for meetings, trade visits &amp; conferences worldwide.</p></div>
-      <div class="sv fi"><div class="sv-i">🎓</div><h3>Student Visa</h3><p>University admissions &amp; student visa for top global institutions.</p></div>
-      <div class="sv fi"><div class="sv-i">⚙️</div><h3>Work Permit</h3><p>Employment visas for skilled workers across all industries &amp; countries.</p></div>
-      <div class="sv fi"><div class="sv-i">👨‍👩‍👧</div><h3>Family Visa</h3><p>Spouse, dependent and family reunion visas handled with care.</p></div>
-      <div class="sv fi"><div class="sv-i">🏠</div><h3>PR &amp; Immigration</h3><p>Permanent residency planning and full application support.</p></div>
+      <div class="sv fi">
+        <div class="sv-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M7 15h2M12 15h5"/></svg></div>
+        <h3>Tourist Visa</h3><p>Leisure travel visas for all major destinations. Full documentation support included.</p>
+      </div>
+      <div class="sv fi">
+        <div class="sv-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+        <h3>Business Visa</h3><p>Corporate travel visas for meetings, trade visits and conferences worldwide.</p>
+      </div>
+      <div class="sv fi">
+        <div class="sv-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <h3>Student Visa</h3><p>University admissions and student visa processing for top global institutions.</p>
+      </div>
+      <div class="sv fi">
+        <div class="sv-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/><path d="M19 8h2M3 8h2"/></svg></div>
+        <h3>Work Permit</h3><p>Employment visas for skilled workers across all industries and countries.</p>
+      </div>
+      <div class="sv fi">
+        <div class="sv-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Family Visa</h3><p>Spouse, dependent and family reunion visas handled with care and precision.</p>
+      </div>
+      <div class="sv fi">
+        <div class="sv-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+        <h3>PR &amp; Immigration</h3><p>Permanent residency planning and full application support for any country.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- JOBS -->
+<!-- ════════════════════════════ JOBS ════════════════════════════════ -->
 <section class="sec" id="jobs">
   <div class="secw">
     <div class="sh fi">
@@ -291,26 +337,27 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
       <div class="sh-ln"></div>
     </div>
     <div class="jf fi">
-      <button class="fb a" onclick="fj('all',this)">All</button>
-      <button class="fb" onclick="fj('uk',this)">🇬🇧 UK</button>
-      <button class="fb" onclick="fj('canada',this)">🇨🇦 Canada</button>
-      <button class="fb" onclick="fj('uae',this)">🇦🇪 UAE</button>
-      <button class="fb" onclick="fj('germany',this)">🇩🇪 Germany</button>
-      <button class="fb" onclick="fj('australia',this)">🇦🇺 Australia</button>
-      <button class="fb" onclick="fj('singapore',this)">🇸🇬 Singapore</button>
+      <button class="fb a" onclick="fj('all',this)">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20"/></svg>All</button>
+      <button class="fb" onclick="fj('uk',this)"><img src="https://flagcdn.com/w20/gb.png" style="width:16px;height:12px;border-radius:2px;object-fit:cover" alt="UK"> UK</button>
+      <button class="fb" onclick="fj('canada',this)"><img src="https://flagcdn.com/w20/ca.png" style="width:16px;height:12px;border-radius:2px;object-fit:cover" alt="CA"> Canada</button>
+      <button class="fb" onclick="fj('uae',this)"><img src="https://flagcdn.com/w20/ae.png" style="width:16px;height:12px;border-radius:2px;object-fit:cover" alt="AE"> UAE</button>
+      <button class="fb" onclick="fj('germany',this)"><img src="https://flagcdn.com/w20/de.png" style="width:16px;height:12px;border-radius:2px;object-fit:cover" alt="DE"> Germany</button>
+      <button class="fb" onclick="fj('australia',this)"><img src="https://flagcdn.com/w20/au.png" style="width:16px;height:12px;border-radius:2px;object-fit:cover" alt="AU"> Australia</button>
+      <button class="fb" onclick="fj('singapore',this)"><img src="https://flagcdn.com/w20/sg.png" style="width:16px;height:12px;border-radius:2px;object-fit:cover" alt="SG"> Singapore</button>
     </div>
     <div class="job-list fi" id="jlist"></div>
     <div class="jobs-more fi">
-      <p>Don't see your field? We have <strong>500+ more openings</strong> not listed here.</p>
-      <a href="https://wa.me/13653601075?text=Hi%20VM%20International%2C%20I%20am%20looking%20for%20a%20job%20abroad.%20Please%20help." target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <p>Don't see your field? We have <strong>500+ more openings</strong> not listed here. WhatsApp us with your skills.</p>
+      <a href="https://wa.me/13653601075?text=Hi%20VM%20International%2C%20I%20am%20looking%20for%20a%20job%20abroad.%20Please%20help." target="_blank" class="jm-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Ask on WhatsApp
       </a>
     </div>
   </div>
 </section>
 
-<!-- COUNTRIES -->
+<!-- ═════════════════════════ COUNTRIES ══════════════════════════════ -->
 <section class="sec sec-dk" id="countries">
   <div class="secw">
     <div class="sh fi">
@@ -318,24 +365,11 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
       <h2 class="sh-t">50+ <span>Countries</span></h2>
       <div class="sh-ln"></div>
     </div>
-    <div class="cg">
-      <a href="https://wa.me/13653601075?text=US%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇺🇸</span><div><div class="cc-n">United States</div><div class="cc-t">Tourist · B1/B2 · Student</div></div></a>
-      <a href="https://wa.me/13653601075?text=UK%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇬🇧</span><div><div class="cc-n">United Kingdom</div><div class="cc-t">Visit · Work · Study</div></div></a>
-      <a href="https://wa.me/13653601075?text=Canada%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇨🇦</span><div><div class="cc-n">Canada</div><div class="cc-t">ETA · PR · Work Permit</div></div></a>
-      <a href="https://wa.me/13653601075?text=Australia%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇦🇺</span><div><div class="cc-n">Australia</div><div class="cc-t">Tourist · Skilled · Student</div></div></a>
-      <a href="https://wa.me/13653601075?text=Germany%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇩🇪</span><div><div class="cc-n">Germany</div><div class="cc-t">Schengen · Work · Study</div></div></a>
-      <a href="https://wa.me/13653601075?text=UAE%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇦🇪</span><div><div class="cc-n">UAE / Dubai</div><div class="cc-t">Tourist · Business</div></div></a>
-      <a href="https://wa.me/13653601075?text=Singapore%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇸🇬</span><div><div class="cc-n">Singapore</div><div class="cc-t">Tourist · EP Pass</div></div></a>
-      <a href="https://wa.me/13653601075?text=Japan%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇯🇵</span><div><div class="cc-n">Japan</div><div class="cc-t">Tourist · Business</div></div></a>
-      <a href="https://wa.me/13653601075?text=New%20Zealand%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇳🇿</span><div><div class="cc-n">New Zealand</div><div class="cc-t">Tourist · Skilled</div></div></a>
-      <a href="https://wa.me/13653601075?text=France%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇫🇷</span><div><div class="cc-n">France</div><div class="cc-t">Schengen · Tourist</div></div></a>
-      <a href="https://wa.me/13653601075?text=Malaysia%20Visa" target="_blank" class="cc fi"><span class="cc-fl">🇲🇾</span><div><div class="cc-n">Malaysia</div><div class="cc-t">Tourist · MM2H</div></div></a>
-      <a href="https://wa.me/13653601075?text=More%20countries" target="_blank" class="cc fi"><span class="cc-fl">🌍</span><div><div class="cc-n">+39 More</div><div class="cc-t">Ask on WhatsApp</div></div></a>
-    </div>
+    <div class="cg" id="ctryGrid"></div>
   </div>
 </section>
 
-<!-- PROCESS -->
+<!-- ══════════════════════════ PROCESS ═══════════════════════════════ -->
 <section class="sec sec-bg" id="process">
   <div class="secw">
     <div class="sh fi" style="text-align:center">
@@ -344,15 +378,27 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
       <div class="sh-ln" style="margin:10px auto 0"></div>
     </div>
     <div class="pg">
-      <div class="ps fi"><div class="ps-n">1</div><h4>WhatsApp Us</h4><p>Message your destination &amp; goal. We reply within hours.</p></div>
-      <div class="ps fi"><div class="ps-n">2</div><h4>Get Assessment</h4><p>Expert reviews your profile and recommends the best path.</p></div>
-      <div class="ps fi"><div class="ps-n">3</div><h4>Prepare &amp; Submit</h4><p>We prepare all documents and file your application.</p></div>
-      <div class="ps fi"><div class="ps-n">4</div><h4>Visa / Job Secured!</h4><p>Get your visa stamped or job offer — guided every step.</p></div>
+      <div class="ps fi">
+        <div class="ps-n"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+        <h4>WhatsApp Us</h4><p>Message your destination &amp; goal. We reply within hours.</p>
+      </div>
+      <div class="ps fi">
+        <div class="ps-n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <h4>Get Assessment</h4><p>Expert reviews your profile and recommends the best path.</p>
+      </div>
+      <div class="ps fi">
+        <div class="ps-n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h4>Prepare &amp; Submit</h4><p>We prepare all documents and file your application.</p>
+      </div>
+      <div class="ps fi">
+        <div class="ps-n"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="16 12 12 8 8 12"/><line x1="12" y1="16" x2="12" y2="8"/></svg></div>
+        <h4>Visa / Job Secured!</h4><p>Receive your visa or job offer — guided every step.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT — WhatsApp only, no form -->
+<!-- ═══════════════════════════ CONTACT ══════════════════════════════ -->
 <section class="sec" id="contact">
   <div class="secw">
     <div class="sh fi" style="text-align:center">
@@ -363,129 +409,145 @@ footer{background:#060e18;padding:30px 18px 18px;border-top:1px solid rgba(181,1
     <div class="contact-wa fi">
       <p>Ready to apply for a visa or find a job abroad? Our team is available 7 days a week. Simply tap below — we'll guide you through everything.</p>
       <a href="https://wa.me/13653601075" target="_blank" class="wa-big">
-        <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Chat on WhatsApp — +1 365 360 1075
       </a>
       <div class="wa-info">
-        <div class="wi">🕐 <strong>Mon – Sun &nbsp;9 AM – 10 PM</strong></div>
-        <div class="wi">🌍 <strong>All Countries Welcome</strong></div>
+        <div class="wi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><strong>Mon – Sun &nbsp;9 AM – 10 PM</strong></div>
+        <div class="wi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20"/></svg><strong>All Countries Welcome</strong></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ════════════════════════════ FOOTER ══════════════════════════════ -->
 <footer>
   <div class="fw">
     <div class="ft">
       <div class="fb2">
-        <a href="#" class="logo"><div class="logo-sq">VM</div><div class="logo-t"><b>VM International</b><small>Visa &amp; Overseas Jobs</small></div></a>
+        <a href="#" class="logo">
+          <svg class="logo-mark" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="38" height="38" rx="7" fill="url(#lg2)"/>
+            <circle cx="19" cy="19" r="10" stroke="#0b1c2e" stroke-width="1.4" fill="none"/>
+            <ellipse cx="19" cy="19" rx="5.5" ry="10" stroke="#0b1c2e" stroke-width="1.2" fill="none"/>
+            <line x1="9" y1="19" x2="29" y2="19" stroke="#0b1c2e" stroke-width="1.2"/>
+            <line x1="10.5" y1="14" x2="27.5" y2="14" stroke="#0b1c2e" stroke-width="1"/>
+            <line x1="10.5" y1="24" x2="27.5" y2="24" stroke="#0b1c2e" stroke-width="1"/>
+            <path d="M23 13l-7 4 2 2-4 3 1.5 1 4-2 1.5 2 4-7z" fill="#0b1c2e" opacity=".8"/>
+            <defs><linearGradient id="lg2" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#b5892b"/><stop offset="1" stop-color="#d4a83e"/></linearGradient></defs>
+          </svg>
+          <div class="logo-t"><b>VM International</b><small>Visa &amp; Overseas Jobs</small></div>
+        </a>
         <p>Expert visa processing and international job placement. Available 24/7 on WhatsApp.</p>
         <a href="https://wa.me/13653601075" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#25d366;color:#fff;padding:8px 14px;border-radius:4px;font-size:12px;font-weight:600;text-decoration:none">
-          <svg viewBox="0 0 24 24" fill="currentColor" style="width:13px;height:13px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           +1 365 360 1075
         </a>
       </div>
       <div class="fc"><h5>Services</h5><ul><li><a href="#services">Tourist Visa</a></li><li><a href="#services">Business Visa</a></li><li><a href="#services">Student Visa</a></li><li><a href="#services">Work Permit</a></li><li><a href="#jobs">Job Placement</a></li><li><a href="#services">PR / Immigration</a></li></ul></div>
       <div class="fc"><h5>Quick Links</h5><ul><li><a href="#countries">Countries</a></li><li><a href="#process">How It Works</a></li><li><a href="#jobs">Jobs Abroad</a></li><li><a href="#contact">Contact</a></li><li><a href="https://wa.me/13653601075" target="_blank">WhatsApp Us</a></li></ul></div>
     </div>
-    <div class="fbot"><p>© 2025 VM International Visa Service. All rights reserved.</p><a href="https://wa.me/13653601075" target="_blank">💬 +1 365 360 1075</a></div>
+    <div class="fbot">
+      <p>© 2025 VM International Visa Service. All rights reserved.</p>
+      <a href="https://wa.me/13653601075" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +1 365 360 1075
+      </a>
+    </div>
   </div>
 </footer>
 
 <!-- WA FLOAT -->
-<a href="https://wa.me/13653601075" target="_blank" class="waf" title="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<a href="https://wa.me/13653601075" target="_blank" class="waf" title="WhatsApp Us">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
+<!-- ════════════════════════════ JS ═══════════════════════════════════ -->
 <script>
-// ── JOBS DATA ──────────────────────────────────────────────────────────────
-const JOBS = [
-  { id:1,  c:'uk',        flag:'🇬🇧', ic:'🏥', co:'NHS England',           ctry:'United Kingdom',  title:'Registered Nurse (RGN/RMN)',        sal:'£32,000–£40,000/yr', badge:'hot',
-    type:'Full-time · Permanent', visa:'Tier 2 Visa Sponsored', loc:'London / Manchester / Birmingham', exp:'2+ years clinical', edu:'BSc Nursing or equivalent',
-    perks:['NMC registration support provided','Relocation allowance up to £3,000','NHS pension &amp; benefits included','Free upskilling &amp; training'],
-    tags:['Healthcare','Visa Sponsored','Relocation'],  link:'https://www.jobs.nhs.uk/' },
-
-  { id:2,  c:'uk',        flag:'🇬🇧', ic:'🏗️', co:'Balfour Beatty UK',     ctry:'United Kingdom',  title:'Site Civil Engineer',               sal:'£38,000–£50,000/yr', badge:'new',
-    type:'Full-time · Contract',  visa:'Skilled Worker Visa',   loc:'London / Birmingham / Leeds',       exp:'3+ years civil/construction', edu:'B.Tech Civil Engineering',
-    perks:['Major infrastructure projects','25 days leave + bank holidays','Private healthcare','Career progression to Senior'],
-    tags:['Civil Engg','Construction','Visa Sponsored'],  link:'https://www.balfourbeatty.com/careers/' },
-
-  { id:3,  c:'canada',    flag:'🇨🇦', ic:'📦', co:'Amazon Canada',          ctry:'Canada',          title:'Fulfillment Center Associate',       sal:'CAD $38,000–$42,000/yr', badge:'hot',
-    type:'Full-time · Shifts',    visa:'LMIA / Work Permit',    loc:'Toronto / Vancouver / Calgary',     exp:'No experience required', edu:'High School / 10th Pass',
-    perks:['Immediate joining available','Medical, dental &amp; vision benefits','Overtime pay 1.5×','PR pathway via Express Entry'],
-    tags:['Entry Level','LMIA','PR Pathway'],  link:'https://www.amazon.jobs/en/locations/canada' },
-
-  { id:4,  c:'canada',    flag:'🇨🇦', ic:'🍁', co:'Govt of Alberta',        ctry:'Canada',          title:'Long Haul Truck Driver',             sal:'CAD $55,000–$70,000/yr', badge:'feat',
-    type:'Full-time · Permanent', visa:'LMIA · Express Entry',  loc:'Alberta / Saskatchewan',            exp:'2+ years commercial driving', edu:'Commercial Driving Licence',
-    perks:['Government employer — secure &amp; stable','Per diem + fuel allowance','AINP nomination support','Family sponsorship eligible after 1 yr'],
-    tags:['LMIA','Government','PR Nomination','Family Visa'],  link:'https://alis.alberta.ca/hire-alberta/' },
-
-  { id:5,  c:'uae',       flag:'🇦🇪', ic:'✈️', co:'Emirates Group',         ctry:'UAE / Dubai',     title:'Cabin Crew Member',                 sal:'AED 8,000–12,000/mo (Tax-Free)', badge:'feat',
-    type:'Full-time · Permanent', visa:'Employment Visa Provided', loc:'Dubai, UAE',                    exp:'No prior airline exp needed', edu:'High School + fluent English',
-    perks:['Free furnished accommodation in Dubai','Medical for self &amp; dependents','90% off flights worldwide','Annual leave ticket home'],
-    tags:['Tax-Free','Accommodation','Aviation','Family Benefits'],  link:'https://www.emiratesgroupcareers.com/' },
-
-  { id:6,  c:'uae',       flag:'🇦🇪', ic:'🏢', co:'EMAAR Properties',       ctry:'UAE / Dubai',     title:'Civil / Structural Engineer',       sal:'AED 14,000–20,000/mo', badge:'new',
-    type:'Full-time · 2yr Contract', visa:'UAE Employment Visa', loc:'Dubai / Abu Dhabi',               exp:'5+ years experience', edu:'B.Tech / B.E. Civil or Structural',
-    perks:['World-class mega projects','Housing allowance AED 3,000/mo','Annual performance bonus','Multinational team'],
-    tags:['Engineering','Housing Allowance','Senior Role'],  link:'https://www.emaar.com/en/careers/' },
-
-  { id:7,  c:'germany',   flag:'🇩🇪', ic:'⚡', co:'Siemens AG',             ctry:'Germany',         title:'Electrical / Automation Engineer',  sal:'€48,000–€68,000/yr', badge:'feat',
-    type:'Full-time · Permanent', visa:'EU Blue Card',           loc:'Munich / Berlin / Hamburg',         exp:'3+ years industrial automation', edu:'B.E. Electrical/Electronics',
-    perks:['EU Blue Card fast-track','Family Blue Card included','30 days paid leave','German language course sponsored'],
-    tags:['Blue Card','Family Visa','Language Support'],  link:'https://new.siemens.com/global/en/company/jobs.html' },
-
-  { id:8,  c:'germany',   flag:'🇩🇪', ic:'🚗', co:'Mercedes-Benz AG',       ctry:'Germany',         title:'Automotive Technician / Mechanic',  sal:'€34,000–€46,000/yr', badge:'new',
-    type:'Full-time · Permanent', visa:'Skilled Immigration Act', loc:'Stuttgart / Munich',              exp:'2+ years auto workshop', edu:'ITI / Diploma Automobile / Mechanical',
-    perks:['Recognised qualification pathway','Relocation bonus €2,000','Health insurance fully covered','Skilled Visa under FEG Act'],
-    tags:['ITI Eligible','Relocation Bonus','Skilled Visa'],  link:'https://www.mercedes-benz.com/en/career/' },
-
-  { id:9,  c:'australia', flag:'🇦🇺', ic:'⛏️', co:'BHP Group',              ctry:'Australia',       title:'Mine Site Operator (FIFO)',          sal:'AUD $95,000–$115,000/yr', badge:'hot',
-    type:'Full-time · FIFO 2wks on/1wk off', visa:'Employer-Sponsored 482 Visa', loc:'Western Australia / Queensland', exp:'1+ yr heavy machinery or FIFO', edu:'10th Pass + valid licence',
-    perks:['Return flights &amp; accommodation fully paid','All meals on site','2 weeks work / 1 week home','482 Visa → PR in 3 years'],
-    tags:['FIFO','High Salary','482 Visa','PR Pathway'],  link:'https://careers.bhp.com/' },
-
-  { id:10, c:'australia', flag:'🇦🇺', ic:'👨‍⚕️', co:'Queensland Health',    ctry:'Australia',       title:'Enrolled Nurse / AIN',              sal:'AUD $55,000–$70,000/yr', badge:'new',
-    type:'Full-time · Permanent', visa:'482 Employer-Sponsored', loc:'Brisbane / Gold Coast / Cairns',   exp:'1+ yr nursing or aged care', edu:'Diploma Nursing / GNM / ANM',
-    perks:['AHPRA registration support','Govt salary packaging','Relocation up to AUD $5,000','Family visa sponsorship eligible'],
-    tags:['Nursing','482 Visa','Relocation Aid','Government'],  link:'https://www.health.qld.gov.au/employment/' },
-
-  { id:11, c:'singapore', flag:'🇸🇬', ic:'🏦', co:'DBS Bank',               ctry:'Singapore',       title:'Software Developer (Full-Stack)',   sal:'SGD $72,000–$110,000/yr', badge:'feat',
-    type:'Full-time · Permanent', visa:'Employment Pass (EP)',   loc:'Singapore CBD',                     exp:'3+ years software dev', edu:'B.Tech CS / IT or equivalent',
-    perks:['EP processed in 3–4 weeks','Annual bonus 1–3 months salary','Medical &amp; dental included','PR eligible after 2 years'],
-    tags:['EP Visa','PR Pathway','Fintech','Bonus'],  link:'https://www.dbs.com/careers/' },
-
-  { id:12, c:'singapore', flag:'🇸🇬', ic:'🛫', co:'Changi Airport Group',   ctry:'Singapore',       title:'Airport Operations Executive',      sal:'SGD $28,000–$38,000/yr', badge:'new',
-    type:'Full-time · Shift-based', visa:'Work Permit / S-Pass', loc:'Changi Airport, Singapore',         exp:'1+ yr customer service or ops', edu:'Diploma / Graduate any field',
-    perks:['Uniform &amp; meal allowance provided','Shift premium pay','Staff travel perks','Clear promotion pathway'],
-    tags:['Aviation','Entry Level','S-Pass','Shift Premium'],  link:'https://www.changiairport.com/careers.html' },
+// ── JOBS DATA ─────────────────────────────────────────────────────────
+const JOBS=[
+  {id:1,c:'uk',flag:'gb',co:'NHS England',ctry:'United Kingdom',title:'Registered Nurse (RGN/RMN)',sal:'£32,000–£40,000/yr',badge:'hot',
+   type:'Full-time · Permanent',visa:'Tier 2 Visa Sponsored',loc:'London / Manchester / Birmingham',exp:'2+ years clinical',edu:'BSc Nursing or equivalent',
+   perks:['NMC registration support provided','Relocation allowance up to £3,000','NHS pension & benefits','Free upskilling & training'],
+   tags:['Healthcare','Visa Sponsored','Relocation']},
+  {id:2,c:'uk',flag:'gb',co:'Balfour Beatty',ctry:'United Kingdom',title:'Site Civil Engineer',sal:'£38,000–£50,000/yr',badge:'new',
+   type:'Full-time · Contract',visa:'Skilled Worker Visa',loc:'London / Birmingham / Leeds',exp:'3+ years civil/construction',edu:'B.Tech Civil Engineering',
+   perks:['Major infrastructure projects','25 days leave + bank holidays','Private healthcare','Career to Senior Engineer'],
+   tags:['Civil Engg','Construction','Visa Sponsored']},
+  {id:3,c:'canada',flag:'ca',co:'Amazon Canada',ctry:'Canada',title:'Fulfillment Center Associate',sal:'CAD $38,000–$42,000/yr',badge:'hot',
+   type:'Full-time · Shifts',visa:'LMIA / Work Permit',loc:'Toronto / Vancouver / Calgary',exp:'No experience required',edu:'High School / 10th Pass',
+   perks:['Immediate joining available','Medical, dental & vision','Overtime pay 1.5×','PR pathway via Express Entry'],
+   tags:['Entry Level','LMIA','PR Pathway']},
+  {id:4,c:'canada',flag:'ca',co:'Govt of Alberta',ctry:'Canada',title:'Long Haul Truck Driver',sal:'CAD $55,000–$70,000/yr',badge:'feat',
+   type:'Full-time · Permanent',visa:'LMIA · Express Entry',loc:'Alberta / Saskatchewan',exp:'2+ years commercial driving',edu:'Commercial Driving Licence',
+   perks:['Government employer — stable','Per diem + fuel allowance','AINP nomination support','Family sponsorship after 1 yr'],
+   tags:['LMIA','Government','PR Nomination']},
+  {id:5,c:'uae',flag:'ae',co:'Emirates Group',ctry:'UAE / Dubai',title:'Cabin Crew Member',sal:'AED 8,000–12,000/mo Tax-Free',badge:'feat',
+   type:'Full-time · Permanent',visa:'Employment Visa Provided',loc:'Dubai, UAE',exp:'No prior airline exp needed',edu:'High School + fluent English',
+   perks:['Free furnished accommodation','Medical for self & dependents','90% off flights worldwide','Annual leave ticket home'],
+   tags:['Tax-Free','Accommodation','Aviation']},
+  {id:6,c:'uae',flag:'ae',co:'EMAAR Properties',ctry:'UAE / Dubai',title:'Civil / Structural Engineer',sal:'AED 14,000–20,000/mo',badge:'new',
+   type:'Full-time · 2yr Contract',visa:'UAE Employment Visa',loc:'Dubai / Abu Dhabi',exp:'5+ years experience',edu:'B.Tech / B.E. Civil or Structural',
+   perks:['World-class mega projects','Housing allowance AED 3,000/mo','Annual performance bonus','Multinational team'],
+   tags:['Engineering','Housing Allowance','Senior Role']},
+  {id:7,c:'germany',flag:'de',co:'Siemens AG',ctry:'Germany',title:'Electrical / Automation Engineer',sal:'€48,000–€68,000/yr',badge:'feat',
+   type:'Full-time · Permanent',visa:'EU Blue Card',loc:'Munich / Berlin / Hamburg',exp:'3+ years industrial automation',edu:'B.E. Electrical/Electronics',
+   perks:['EU Blue Card fast-track','Family Blue Card included','30 days paid leave','German language course sponsored'],
+   tags:['Blue Card','Family Visa','Language Support']},
+  {id:8,c:'germany',flag:'de',co:'Mercedes-Benz AG',ctry:'Germany',title:'Automotive Technician / Mechanic',sal:'€34,000–€46,000/yr',badge:'new',
+   type:'Full-time · Permanent',visa:'Skilled Immigration Act',loc:'Stuttgart / Munich',exp:'2+ years auto workshop',edu:'ITI / Diploma Automobile / Mechanical',
+   perks:['Recognised qualification pathway','Relocation bonus €2,000','Health insurance covered','Skilled Visa under FEG Act'],
+   tags:['ITI Eligible','Relocation Bonus','Skilled Visa']},
+  {id:9,c:'australia',flag:'au',co:'BHP Group',ctry:'Australia',title:'Mine Site Operator (FIFO)',sal:'AUD $95,000–$115,000/yr',badge:'hot',
+   type:'Full-time · FIFO 2wks on/1wk off',visa:'Employer-Sponsored 482 Visa',loc:'Western Australia / Queensland',exp:'1+ yr heavy machinery or FIFO',edu:'10th Pass + valid licence',
+   perks:['Flights & accommodation fully paid','All meals on site covered','482 Visa → PR in 3 years','2 weeks work / 1 week home'],
+   tags:['FIFO','High Salary','482 Visa','PR Pathway']},
+  {id:10,c:'australia',flag:'au',co:'Queensland Health',ctry:'Australia',title:'Enrolled Nurse / AIN',sal:'AUD $55,000–$70,000/yr',badge:'new',
+   type:'Full-time · Permanent',visa:'482 Employer-Sponsored',loc:'Brisbane / Gold Coast / Cairns',exp:'1+ yr nursing or aged care',edu:'Diploma Nursing / GNM / ANM',
+   perks:['AHPRA registration support','Govt salary packaging','Relocation up to AUD $5,000','Family visa sponsorship eligible'],
+   tags:['Nursing','482 Visa','Relocation Aid']},
+  {id:11,c:'singapore',flag:'sg',co:'DBS Bank',ctry:'Singapore',title:'Software Developer (Full-Stack)',sal:'SGD $72,000–$110,000/yr',badge:'feat',
+   type:'Full-time · Permanent',visa:'Employment Pass (EP)',loc:'Singapore CBD',exp:'3+ years software dev',edu:'B.Tech CS / IT or equivalent',
+   perks:['EP processed in 3–4 weeks','Annual bonus 1–3 months salary','Medical & dental included','PR eligible after 2 years'],
+   tags:['EP Visa','PR Pathway','Fintech']},
+  {id:12,c:'singapore',flag:'sg',co:'Changi Airport Group',ctry:'Singapore',title:'Airport Operations Executive',sal:'SGD $28,000–$38,000/yr',badge:'new',
+   type:'Full-time · Shift-based',visa:'Work Permit / S-Pass',loc:'Changi Airport, Singapore',exp:'1+ yr customer service or ops',edu:'Diploma / Graduate any field',
+   perks:['Uniform & meal allowance','Shift premium pay','Staff travel perks','Clear promotion pathway'],
+   tags:['Aviation','Entry Level','S-Pass']},
 ];
 
-// WhatsApp SVG helper
-const waIco = s=>`<svg viewBox="0 0 24 24" fill="currentColor" style="width:${s}px;height:${s}px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+// country label map
+const CTRY_LABEL={'gb':'United Kingdom','ca':'Canada','ae':'UAE / Dubai','de':'Germany','au':'Australia','sg':'Singapore'};
 
-// Render job list
+// WA SVG
+const WA_SVG=`<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+
+const CHECK_SVG=`<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+
+// ── RENDER JOBS ──────────────────────────────────────────────────────
 function render(filter){
-  const list = document.getElementById('jlist');
-  const data = filter==='all' ? JOBS : JOBS.filter(j=>j.c===filter);
-  list.innerHTML = data.map(j=>{
-    const bl = j.badge==='hot'?'🔥 Hot':j.badge==='new'?'✨ New':'⭐ Featured';
-    const waMsg = encodeURIComponent(`Hi VM International, I am interested in the ${j.title} role at ${j.co} in ${j.ctry}. Please help with visa & application.`);
-    return `
+  const list=document.getElementById('jlist');
+  const data=filter==='all'?JOBS:JOBS.filter(j=>j.c===filter);
+  list.innerHTML=data.map(j=>{
+    const bl=j.badge==='hot'?'Hot':j.badge==='new'?'New':'Featured';
+    // pre-filled WhatsApp message
+    const msg=encodeURIComponent(`Hi VM International, I am interested in the *${j.title}* position at ${j.co} in ${j.ctry} (Salary: ${j.sal}). Please guide me on the visa and application process. Thank you.`);
+    const waLink=`https://wa.me/13653601075?text=${msg}`;
+    return`
     <div class="job-item" id="ji${j.id}">
       <div class="job-head" onclick="tog(${j.id})">
-        <div class="job-ic">${j.ic}</div>
+        <div class="job-flag-box">
+          <img src="https://flagcdn.com/w40/${j.flag}.png" alt="${CTRY_LABEL[j.flag]}" loading="lazy"/>
+        </div>
         <div class="job-hl">
           <div class="job-title">${j.title}</div>
           <div class="job-meta">
-            <span class="job-co">${j.flag} ${j.co}</span>
+            <span class="job-co">${j.co}</span>
             <span class="dot">·</span>
             <span>${j.loc.split('/')[0].trim()}</span>
             <span class="dot">·</span>
             <span>${j.type.split('·')[0].trim()}</span>
           </div>
-          <!-- shown only on mobile -->
           <div class="job-mob">
             <span class="job-sal">${j.sal}</span>
             <span class="jbadge ${j.badge}">${bl}</span>
@@ -494,7 +556,9 @@ function render(filter){
         <div class="job-right">
           <span class="job-sal">${j.sal}</span>
           <span class="jbadge ${j.badge}">${bl}</span>
-          <div class="job-arr">▾</div>
+          <div class="job-arr">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
         </div>
       </div>
       <div class="job-body" id="jb${j.id}">
@@ -504,30 +568,28 @@ function render(filter){
               <h5>Job Details</h5>
               <div class="jb-rows">
                 <div class="jb-row"><b>Company</b><span>${j.co}</span></div>
-                <div class="jb-row"><b>Country</b><span>${j.flag} ${j.ctry}</span></div>
+                <div class="jb-row"><b>Country</b><span>${j.ctry}</span></div>
                 <div class="jb-row"><b>Location</b><span>${j.loc}</span></div>
-                <div class="jb-row"><b>Type</b><span>${j.type}</span></div>
+                <div class="jb-row"><b>Job Type</b><span>${j.type}</span></div>
                 <div class="jb-row"><b>Salary</b><span>${j.sal}</span></div>
-                <div class="jb-row"><b>Visa</b><span>✅ ${j.visa}</span></div>
+                <div class="jb-row"><b>Visa</b><span>${j.visa}</span></div>
                 <div class="jb-row"><b>Experience</b><span>${j.exp}</span></div>
                 <div class="jb-row"><b>Education</b><span>${j.edu}</span></div>
               </div>
             </div>
             <div class="jb-sec">
               <h5>Benefits &amp; Perks</h5>
-              <ul class="req-list">${j.perks.map(p=>`<li>${p}</li>`).join('')}</ul>
+              <ul class="perk-list">${j.perks.map(p=>`<li>${CHECK_SVG}${p}</li>`).join('')}</ul>
               <div class="jb-tags">${j.tags.map(t=>`<span class="jb-tag">${t}</span>`).join('')}</div>
             </div>
           </div>
-          <div class="jb-acts">
-            <a href="${j.link}" target="_blank" class="apply-btn">Apply at Company ↗</a>
-            <a href="https://wa.me/13653601075?text=${waMsg}" target="_blank" class="wa-apply">${waIco(13)} Get Visa Help</a>
-          </div>
+          <a href="${waLink}" target="_blank" class="jb-apply">
+            ${WA_SVG} Apply via WhatsApp — Send Auto Message
+          </a>
         </div>
       </div>
     </div>`;
   }).join('');
-  // fade-in new items
   document.querySelectorAll('.job-item').forEach((el,i)=>{
     el.style.transitionDelay=(i%6)*40+'ms';
     el.classList.add('fi');
@@ -539,7 +601,6 @@ function tog(id){
   const item=document.getElementById('ji'+id);
   const body=document.getElementById('jb'+id);
   const wasOpen=item.classList.contains('open');
-  // close all
   document.querySelectorAll('.job-item.open').forEach(el=>{
     el.classList.remove('open');
     el.querySelector('.job-body').style.maxHeight='0';
@@ -547,10 +608,7 @@ function tog(id){
   if(!wasOpen){
     item.classList.add('open');
     body.style.maxHeight=body.scrollHeight+'px';
-    // on mobile scroll item into view
-    if(window.innerWidth<640){
-      setTimeout(()=>item.scrollIntoView({behavior:'smooth',block:'nearest'}),60);
-    }
+    if(window.innerWidth<640) setTimeout(()=>item.scrollIntoView({behavior:'smooth',block:'nearest'}),60);
   }
 }
 
@@ -560,7 +618,33 @@ function fj(f,btn){
   render(f);
 }
 
-// Intersection observer for fade-in
+// ── COUNTRIES ─────────────────────────────────────────────────────────
+const COUNTRIES=[
+  {code:'us',name:'United States',type:'Tourist · B1/B2 · Student'},
+  {code:'gb',name:'United Kingdom',type:'Visit · Work · Study'},
+  {code:'ca',name:'Canada',type:'ETA · PR · Work Permit'},
+  {code:'au',name:'Australia',type:'Tourist · Skilled · Student'},
+  {code:'de',name:'Germany',type:'Schengen · Work · Study'},
+  {code:'ae',name:'UAE / Dubai',type:'Tourist · Business'},
+  {code:'sg',name:'Singapore',type:'Tourist · EP Pass'},
+  {code:'jp',name:'Japan',type:'Tourist · Business'},
+  {code:'nz',name:'New Zealand',type:'Tourist · Skilled'},
+  {code:'fr',name:'France',type:'Schengen · Tourist'},
+  {code:'my',name:'Malaysia',type:'Tourist · MM2H'},
+  {code:'nl',name:'Netherlands',type:'Schengen · Work'},
+  {code:'se',name:'Sweden',type:'Schengen · Work Permit'},
+  {code:'no',name:'Norway',type:'Schengen · Skilled'},
+  {code:'ch',name:'Switzerland',type:'Schengen · Business'},
+  {code:'za',name:'South Africa',type:'Tourist · Business'},
+];
+const cg=document.getElementById('ctryGrid');
+cg.innerHTML=COUNTRIES.map(c=>`
+  <a href="https://wa.me/13653601075?text=Hi%20VM%20International%2C%20I%20need%20help%20with%20${encodeURIComponent(c.name)}%20visa.%20Please%20guide%20me." target="_blank" class="cc fi">
+    <img class="cc-flag" src="https://flagcdn.com/w40/${c.code}.png" alt="${c.name}" loading="lazy"/>
+    <div><div class="cc-n">${c.name}</div><div class="cc-t">${c.type}</div></div>
+  </a>`).join('');
+
+// ── OBSERVER ──────────────────────────────────────────────────────────
 const observer=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');observer.unobserve(e.target);}});
 },{threshold:.07,rootMargin:'0px 0px -16px 0px'});
@@ -568,8 +652,10 @@ document.querySelectorAll('.fi').forEach(el=>observer.observe(el));
 
 // Init
 render('all');
+// re-observe country cards
+document.querySelectorAll('#ctryGrid .cc').forEach(el=>observer.observe(el));
 
-// Burger nav
+// Burger
 document.getElementById('hb').addEventListener('click',()=>document.getElementById('nl').classList.toggle('o'));
 document.querySelectorAll('#nl a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nl').classList.remove('o')));
 </script>
